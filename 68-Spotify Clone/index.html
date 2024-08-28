@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body class="bg-black">
+    <main>
+        <aside>
+            <section class="home m-1 rounded bg-grey p-20-24">
+                <img class="invert" src="assets/logo/logo.svg" alt="" class="logo">
+                <ul>
+                    <li><img class="invert icon" src="assets/icons/home.svg" alt="">Home</li>
+                    <li class="bg-grey-3"><img class="invert icon-grey icon" src="assets/icons/search.svg" alt="">Search
+                    </li>
+                </ul>
+            </section>
+
+            <section class="library bg-grey-3 rounded ">
+                <div class="header p-20-24">
+                    <div class="title">
+                        <img class="icon invert" src="assets/icons/library.svg" alt="">
+                        <span>Library</span>
+                    </div>
+                    <img class="btn-add icon-18 invert" src="assets/icons/add.svg" alt="">
+                </div>
+
+                <div class="items scroller">
+                    <div class="item item-1 bg-grey-2 rounded">
+                        <span class="title">Create your first playlist</span>
+                        <span class="desc ">It's easy, we'll help you</span>
+                        <button class="proceed m-top-12 btn-rounded">Create playlist</button>
+                    </div>
+
+                    <div class="item item-2 rounded bg-grey-2">
+                        <span class="title">Let's find some podcasts to follow</span>
+                        <span class="desc ">We'll keep you updated on new episodes</span>
+                        <button class="proceed m-top-12 btn-rounded">Browse podcasts</button>
+                    </div>
+                </div>
+
+                <div class="about">
+                    <div class="options">
+                        <a href="">Legal</a>
+                        <a href="">Safety & Privacy Center</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">About Ads</a>
+                        <a href="">Accessibility</a>
+                    </div>
+                    <div class="cookies">Cookies</div>
+                </div>
+
+                <div class="lang bg-grey ">
+                    <div class="container btn-rounded">
+                        <img class="icon-2" src="assets/icons/lang.svg" alt=""> <span>English</span>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <div class="container m-1 bg-grey rounded">
+
+            <nav>
+                <div class="slider">
+                    <div class="bg-rounded-black"><img class="icon-2" src="assets/icons/left-arrow.svg" alt=""></div>
+                    <div class="bg-rounded-black"><img class="icon-2" src="assets/icons/right-arrow.svg" alt=""></div>
+                </div>
+                <div class="reg">
+                    <button class="sign-up btn" id="sign-up">Sign up</button>
+                    <button class="sign-in btn" id="sign-in btn-rounded">Sign in</button>
+                </div>
+            </nav>
+
+            <div class="sub-container  scroller">
+                <section class="popular-artists sections">
+
+                    <h2 class="heading">Popular Artists</h2>
+
+                    <p class="view-all">View all</p>
+
+                    <div class="artists article-container">
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo">
+                                    <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Pritam</p>
+                                <p class="type">Artist</p>
+                            </div>
+                        </article>
+                        
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo">
+                                    <img src="https://i.scdn.co/image/ab676161000051740261696c5df3be99da6ed3f3" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Arijit Singh</p>
+                                <p class="type">Artist</p>
+                            </div>
+                        </article>
+                        
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo">
+                                    <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Pritam</p>
+                                <p class="type">Artist</p>
+                            </div>
+                        </article>
+                        
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo">
+                                    <img src="https://i.scdn.co/image/ab676161000051740261696c5df3be99da6ed3f3" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Arijit Singh</p>
+                                <p class="type">Artist</p>
+                            </div>
+                        </article>
+
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo">
+                                    <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Pritam</p>
+                                <p class="type">Artist</p>
+                            </div>
+                        </article>
+                        
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo">
+                                    <img src="https://i.scdn.co/image/ab676161000051740261696c5df3be99da6ed3f3" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Arijit Singh</p>
+                                <p class="type">Artist</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+    
+                <section class="popular-albums sections">
+
+                    <h2 class="heading">Popular Albums</h2>
+
+                    <p class="view-all">View all</p>
+
+                    <div class="artists article-container">
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e02b1b27f0bbb6cf31db78a6aa4" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">ROCKSTAR WITHOUT A GUITAR</p>
+                                <p class="type">Album</p>
+                            </div>
+                        </article>
+                        
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e021a8c4618eda885a406958dd0" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Still Rollin</p>
+                                <p class="type">Album</p>
+                            </div>
+                        </article>
+                        
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e02b1b27f0bbb6cf31db78a6aa4" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">ROCKSTAR WITHOUT A GUITAR</p>
+                                <p class="type">Album</p>
+                            </div>
+                        </article>
+                        
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e021a8c4618eda885a406958dd0" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Still Rollin</p>
+                                <p class="type">Album</p>
+                            </div>
+                        </article>
+
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e02b1b27f0bbb6cf31db78a6aa4" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">ROCKSTAR WITHOUT A GUITAR</p>
+                                <p class="type">Album</p>
+                            </div>
+                        </article>
+                        
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e021a8c4618eda885a406958dd0" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Still Rollin</p>
+                                <p class="type">Album</p>
+                            </div>
+                        </article>
+                        
+                        
+                    </div>
+                </section>
+
+                <section class="popular-radio sections section-type-2">
+
+                    <h2 class="heading">Popular Radio</h2>
+
+                    <p class="view-all">View all</p>
+
+                    <div class="artists article-container">
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Arijit Singh Radio</p>
+                                <p class="type">With Neha Kakkar, Pritam and more</p>
+                            </div>
+                        </article>
+
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/5HcunTidTUrOaf8V0iJcvl/en" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Nusrat Fateh Ali Khan Radio</p>
+                                <p class="type">With Abida Parveen, Attaullah Esakhelvi, Badali Brothers and more</p>
+                            </div>
+                        </article>
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Arijit Singh Radio</p>
+                                <p class="type">With Neha Kakkar, Pritam and more</p>
+                            </div>
+                        </article>
+
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/5HcunTidTUrOaf8V0iJcvl/en" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Nusrat Fateh Ali Khan Radio</p>
+                                <p class="type">With Abida Parveen, Attaullah Esakhelvi, Badali Brothers and more</p>
+                            </div>
+                        </article>
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Arijit Singh Radio</p>
+                                <p class="type">With Neha Kakkar, Pritam and more</p>
+                            </div>
+                        </article>
+
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/5HcunTidTUrOaf8V0iJcvl/en" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Nusrat Fateh Ali Khan Radio</p>
+                                <p class="type">With Abida Parveen, Attaullah Esakhelvi, Badali Brothers and more</p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </section>
+
+                <section class="featured-charts sections section-type-2">
+
+                    <h2 class="heading">Featured Charts</h2>
+
+                    <p class="view-all">View all</p>
+
+                    <div class="artists article-container">
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Top Songs - Global</p>
+                                <p class="type">Your weekly update of the most played tracks right now - Global.</p>
+                            </div>
+                        </article>
+                        
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="	https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Top Songs - USA</p>
+                                <p class="type">Your weekly update of the most played tracks right now - USA.</p>
+                            </div>
+                        </article>
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Top Songs - Global</p>
+                                <p class="type">Your weekly update of the most played tracks right now - Global.</p>
+                            </div>
+                        </article>
+                        
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="	https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Top Songs - USA</p>
+                                <p class="type">Your weekly update of the most played tracks right now - USA.</p>
+                            </div>
+                        </article>
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Top Songs - Global</p>
+                                <p class="type">Your weekly update of the most played tracks right now - Global.</p>
+                            </div>
+                        </article>
+                        
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="	https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Top Songs - USA</p>
+                                <p class="type">Your weekly update of the most played tracks right now - USA.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                </section>
+    
+                <section class="featured-charts sections section-type-2">
+
+                    <h2 class="heading">Spotify Playlists</h2>
+
+                    <p class="view-all">View all</p>
+
+                    <div class="artists article-container">
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="	https://i.scdn.co/image/ab67706f00000002c61f28bb8f3662ae8f720848" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Party Hits</p>
+                                <p class="type">A mix of the pop, hip-hop and part songs. Cover: Charli xcx</p>
+                            </div>
+                        </article>
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://i.scdn.co/image/ab67706f000000020408713c731caaf1f800615a" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Chill Hits</p>
+                                <p class="type">Kick back to the best new and recent chill hits.</p>
+                            </div>
+                        </article>
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="	https://i.scdn.co/image/ab67706f00000002c61f28bb8f3662ae8f720848" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Party Hits</p>
+                                <p class="type">A mix of the pop, hip-hop and part songs. Cover: Charli xcx</p>
+                            </div>
+                        </article>
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://i.scdn.co/image/ab67706f000000020408713c731caaf1f800615a" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Chill Hits</p>
+                                <p class="type">Kick back to the best new and recent chill hits.</p>
+                            </div>
+                        </article>
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="	https://i.scdn.co/image/ab67706f00000002c61f28bb8f3662ae8f720848" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Party Hits</p>
+                                <p class="type">A mix of the pop, hip-hop and part songs. Cover: Charli xcx</p>
+                            </div>
+                        </article>
+                        <article class="articles rounded m-1">
+                            <div class="photo-box">
+                                <div class="rounded-photo-2">
+                                    <img src="https://i.scdn.co/image/ab67706f000000020408713c731caaf1f800615a" alt="" class="profile">
+                                </div>
+                                <div class="btn-play-cont">
+                                    <div class="btn-play">
+                                        <img src="assets/icons/play.svg" alt="" class="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p class="name">Chill Hits</p>
+                                <p class="type">Kick back to the best new and recent chill hits.</p>
+                            </div>
+                        </article>
+                    </div>
+    
+                </section>
+
+                <section class="about sections">
+                    <div class="about-container">
+                        <aticle class="company">
+                            <h3>Company</h3>
+                            <ul class="link-list">
+                                <li>About</li>
+                                <li>Jobs</li>
+                                <li>For the Record</li>
+                            </ul>
+                        </aticle>
+    
+                        <aticle class="communities">
+                            <h3>Communities</h3>
+                            <ul class="link-list">
+                                <li>For Artists</li>
+                                <li>Developers</li>
+                                <li>Advertising</li>
+                                <li>Investors</li>
+                                <li>Vendors</li>
+                            </ul>
+                        </aticle>
+    
+                        <aticle class="useful-links">
+                            <h3>Useful Links</h3>
+                            <ul class="link-list">
+                                <li>Support</li>
+                                <li>Free Mobile App</li>
+                                
+                            </ul>
+                        </aticle>
+    
+                        <aticle class="spotify-plans">
+                            <h3>Spotify Plans</h3>
+                            <ul class="link-list">
+                                <li>Premium Indvidual</li>
+                                <li>Premium Duo</li>
+                                <li>Premium Family</li>
+                                <li>Premium Student</li>
+                                <li>Spotify Free</li>
+                            </ul>
+                        </aticle>
+                    </div>
+
+                    <div class="social-links">
+                        <div class="insta btn-social-link">
+                            <img class="icon-2" src="assets/icons/instagram.svg" alt="">
+                        </div>
+                        <div class="twitter btn-social-link">
+                            <img class="icon-2" src="assets/icons/twitter.svg" alt="">
+                        </div>
+                        <div class="fb btn-social-link">
+                            <img class="icon-2" src="assets/icons/fb.svg" alt="">
+                        </div>
+                    </div>
+
+                </section>
+                <div class="line"> </div>
+
+                <section class="sections copy-right">
+                    <p>© 2024 Spotify AB</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="text">
+            <p class="title">Preview of Spotify</p>
+            <p class="desc">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </div>
+        
+        <button class="btn">Sign up free</button>
+    </footer>
+
+</body>
+
+</html>

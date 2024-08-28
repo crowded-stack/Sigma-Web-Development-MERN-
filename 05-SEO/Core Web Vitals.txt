@@ -1,0 +1,7 @@
+There are three main Core Web Vitals to do SEO optimization in html.
+1. CLS:
+       Cumulative Layout Shift. When the page is loaded the content should not fall down because it will cause wrong selection. So the image sizes should be defined in HTML.
+2. LCP:
+       Largest Content Paint. The largest content on the page should be loaded fast, suggest time 2.5 seconds.
+3. FIP:
+       First Input Process. When an input is given on the page, the input should be processed fast, suggested time 100 milli seconds.

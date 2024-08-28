@@ -1,0 +1,457 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+:root {
+    --bg-btn: rgb(229, 9, 20);
+    --bg-btn-hover: rgb(159, 9, 22);
+    --line-break: rgb(65, 57, 57);
+    --bg-main: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+/* header  */
+
+header {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    place-content: center;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+nav img {
+    width: 150px;
+    height: 80px;
+}
+
+nav button {
+    width: 80px;
+    height: 35px;
+    background-color: var(--bg-btn);
+    border: 1px solid var(--bg-btn);
+    color: white;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+nav button:hover, main .registration .container .box-two form button:hover {
+    background-color: var(--bg-btn-hover);
+    border-color: var(--bg-btn-hover);
+}
+
+
+
+
+
+
+
+
+
+
+/* main  */
+
+main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--bg-main);
+}
+
+main .registration {
+    position: relative;
+    min-height: 90vh;
+    width: 100%;
+}
+
+main .registration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+main .registration .container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+} 
+
+main .registration .container .box-one {
+    height: 40%;
+}
+
+main .registration .container .box-two {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Netflix Sans';
+    row-gap: 20px;
+    padding: 60px;
+}
+
+main .registration .container .box-two h1 {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+main .registration .container .box-two h3 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+
+}
+main .registration .container .box-two p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+main .registration .container .box-two form {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    main .registration .container .box-two {
+        padding: 0 12px;
+    }
+
+    main .registration .container .box-two h1 {
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+    }
+    main .registration .container .box-two h3 {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+
+    }
+    main .registration .container .box-two p {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    main .registration .container .box-two form{
+        width: 100%;
+        flex-direction: column;
+        row-gap: 12px;
+        align-items: center;
+    }
+
+    main .registration .container .box-two form input {
+        height: 30px !important;
+        width: 80% !important;
+    }
+    main .registration .container .box-two form input::placeholder {
+        font-size: 12px !important;
+        
+    }
+
+    main .registration .container .box-two form button {
+        height: 32px !important; 
+        width: 60% !important;
+        font-size: 12px !important;
+        text-align: center !important;
+    }
+}
+
+main .registration .container .box-two form input {
+    height: 60px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.322);
+    padding: 0 20px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+main .registration .container .box-two form input::placeholder {
+    color: rgb(197, 193, 193);
+    font-size: 16px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+}
+
+main .registration .container .box-two form button {
+    height: 62px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-btn);
+    border: 1px solid var(--bg-btn);
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+}
+
+.line-break {
+    height: 8px;
+    background-color: var(--line-break);
+}
+
+
+
+/* Features  */
+
+ .articles {
+    height: 500px;
+    display: flex;
+    color: white;
+    padding: 145px;
+    box-sizing: border-box;
+}
+
+ .articles .photo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .articles .photo img{
+    width: 480px;
+    height: 320px;
+    position: relative;
+    z-index: 3;
+}
+
+.articles .photo video {
+    position: absolute;
+    width: 340px;
+    height: 220px;
+}
+
+ .articles .text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.articles .text h1 {
+    font-size: 50px;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+ .articles .text p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 900px) {
+    main .features .articles {
+        height: 90vh;
+        min-height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    main .features .articles .photo {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .features .articles .photo img{
+        width: 80%;
+        height: 100%;
+    }
+    
+    main .features .articles .text {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+
+    main .features .articles .text h1 {
+        font-size: 30px;
+        font-weight: 700;
+        align-self: center;
+        text-align: center;
+    }
+    
+    main .features .articles .text p {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+}
+
+
+
+
+/* Frequently Asked Questions  */
+
+main .frequently-asked-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    padding: 60px 0;
+}
+
+main .frequently-asked-questions h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+main .frequently-asked-questions .container {
+    width: 80%;
+}
+
+main .frequently-asked-questions .container .questions {
+    height: 80px;
+    background-color: var(--line-break);
+    margin: 10px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+main .frequently-asked-questions .container .questions .text {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 900px) {
+    main .frequently-asked-questions h1 {
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+    }
+
+    main .frequently-asked-questions .container .questions .text {
+        font-size: 12px;
+    }
+    
+}
+
+main .frequently-asked-questions .reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+main .frequently-asked-questions .reg p {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+main .frequently-asked-questions .reg form {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+main .frequently-asked-questions .reg form input {
+    height: 60px;
+    width: 340px;
+    background-color: rgba(0, 0, 0, 0.322);
+    padding: 0 20px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+main .frequently-asked-questions .reg form input::placeholder {
+    color: rgb(197, 193, 193);
+    font-size: 16px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+}
+
+main .frequently-asked-questions .reg form button {
+    height: 62px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-btn);
+    border: 1px solid var(--bg-btn);
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    main .frequently-asked-questions .reg p {
+        font-size: 12px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    main .frequently-asked-questions .reg form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 8px;
+    }
+    
+    main .frequently-asked-questions .reg form input {
+        height: 30px !important;
+        width: 70% !important;
+    }
+    main .frequently-asked-questions .reg form input::placeholder {
+        color: rgb(197, 193, 193);
+        font-size: 12px;
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 500;
+    }
+    
+    main .frequently-asked-questions .reg form button {
+        height: 32px !important;
+        width: 40% !important; 
+        font-size: 12px !important;
+    }
+}
+
+/* Footer  */
+
+footer {
+    height: 500px;
+    background-color: var(--bg-main);
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors</h1>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2 class="heading">What are CSS selectors?</h2>
+                <p class="margin_top_8px">CSS selectors are used to select elements in different ways to style them. There are various number of selectors. Few of them are written below.</p>
+                <dl>
+                    <dt class="heading">Universal Selector</dt>
+                    <dd>This is used to select the whole document. 
+                        <pre>
+                            <code>
+            * {
+                background-color: black;
+                margin: 0;
+            }
+                            </code>
+                        </pre>
+                    </dd>
+
+                    <dt>Element Selector</dt>
+                    <dd>This is used to select element by using tag name 
+                        <pre>
+                            <code>
+            h1 {
+                background-color: black;
+                color: white;
+            }
+            
+                            </code>
+                        </pre>
+                    </dd>
+
+                    <dt>Id Selector</dt>
+                    <dd>This is used to select element by using id defined within tag. 
+                        <pre>
+                            <code>
+            #id_of_element {
+                background-color: black;
+                color: white;
+            }
+            
+                            </code>
+                        </pre>
+                    </dd>
+
+                    <dt>Class Selector</dt>
+                    <dd>This is used to select element by using class defined within the tag. 
+                        <pre>
+                            <code>
+            .class_name {
+                background-color: black;
+                color: white;
+            }
+            
+                            </code>
+                        </pre>
+                    </dd>
+
+                    <dt>Direct-children Selector</dt>
+                    <dd>This is used to select elements those are directly children of parent. 
+                        <pre>
+                            <code>
+            dl > p {
+                color: blueviolet;
+            }
+            
+                            </code>
+                        </pre>
+                    </dd>
+
+                    <dt>Children Selector</dt>
+                    <dd>This is used to select elements those are directly or indirectly children of parent. 
+                        <pre>
+                            <code>
+            dl code {
+                color: chocolate;
+            }
+            
+                            </code>
+                        </pre>
+                    </dd>
+                </dl>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

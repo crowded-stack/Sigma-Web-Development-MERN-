@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        header {
+            padding: 8px 16px;
+            background-color: rgb(95, 184, 7);
+            color: white;
+        }
+
+        h2 {
+            color: rgb(95, 184, 7)
+        }
+
+        main {
+            padding: 32px 16px;
+        }
+
+        .wsu p {
+            width: 30vw;
+            margin-top: 6px;
+        }
+
+        .types {
+            width: 30vw;
+            margin-top: 24px;
+        }
+
+        #units-list {
+            margin-top: 8px;
+        }
+
+        #units-list div {
+            margin-top: 8px;
+        }
+
+        dt {
+            font-weight: 600;
+        }
+
+        dd {
+            margin-left: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Sizing Units</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article class="wsu">
+                <h2>What are sizing units?</h2>
+                <p>Sizing units are used to specify the height and width of elements. Eg. px, vh, vw, vmin, vmax etc.
+                </p>
+            </article>
+
+            <article class="types">
+                <p>Every sizing unit has different specifications. Some of them are defined below.</p>
+
+                <div id="units-list">
+                    <dl>
+                        <div>
+                            <dt>Px</dt>
+                            <dd>Px means pixel values.</dd>
+                        </div>
+
+                        <div>
+                            <dt>VH</dt>
+                            <dd>VH means percentage of view port height.</dd>
+                        </div>
+
+                        <div>
+                            <dt>VW</dt>
+                            <dd>VW means percentage of view port width.</dd>
+                        </div>
+
+                        <div>
+                            <dt>VMin</dt>
+                            <dd>VMin is used with the minimum dimentions of the device. For mobiles Vmin is width and
+                                for computer devices it's height.</dd>
+                        </div>
+
+                        <div>
+                            <dt>VMax</dt>
+                            <dd>VMax is used with max dimentions of the device. For mobiles Vmax is height and width for
+                                computer devices.</dd>
+                        </div>
+                    </dl>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

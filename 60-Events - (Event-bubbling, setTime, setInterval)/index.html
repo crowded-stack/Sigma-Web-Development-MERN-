@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Event-bubbling, setTime, setInterval</title>
+
+    <style>
+        .container {
+            padding: 35px;
+            background-color: rgb(46, 209, 60);
+            border-radius: 12px;
+
+        }
+
+        .box {
+            padding: 15px;
+            background-color: rgb(117, 117, 233);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            row-gap: 12px;
+            border-radius: 12px;
+
+        }
+
+        #btn {
+            width: 120px;
+            padding: 2px 12px;
+            background-color: rgb(255, 0, 0);
+            color: white;
+            border: 2px solid rgb(255, 0, 0);
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Click the below button to trigger event.
+            <button id="btn">Trigger</button>
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelector('.container').addEventListener("click", (e) => {
+            alert("Container event triggered.")
+        })
+
+        document.querySelector('.box').addEventListener("click", (e) => {
+            alert("Box event triggered.")
+        })
+
+        document.getElementById("btn").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("Button event triggered.")
+        })
+
+        let randomColor = () => {
+            return '#' + Math.ceil(Math.random() * Number.parseInt('ffffff', 16)).toString(16);
+        }
+
+        let sIId = setInterval(() => {
+            document.querySelector('.box').style.backgroundColor = randomColor();
+        }, 2000);
+
+        // clearInterval(sIId);
+
+        let sTId = setTimeout(() => {
+            document.querySelector('.container').style.backgroundColor = randomColor();
+        }, 3000)
+
+        // clearTimeout(sTId);
+    </script>
+</body>
+
+</html>

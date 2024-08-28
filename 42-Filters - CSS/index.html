@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters - CSS</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        .photos {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 20px;
+        }
+
+        .photo-1 {
+            filter: blur(4px);
+        }
+
+        .photo-2 {
+            filter:brightness(200%)
+        }
+
+        .photo-3 {
+            filter: contrast(200%);
+        }
+
+        .photo-4 {
+            filter: drop-shadow(16px 16px 20px red);
+        }
+
+        .photo-3 {
+            filter:grayscale()
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        
+        <div class="photos">
+            
+            <img class="photo-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08PwM_faWBcN5624ThVwX9dj0TY2-cSfRArWp1qtZGw&s" alt="">
+            
+            <img class="photo-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08PwM_faWBcN5624ThVwX9dj0TY2-cSfRArWp1qtZGw&s" alt="">
+            
+            <img class="photo-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08PwM_faWBcN5624ThVwX9dj0TY2-cSfRArWp1qtZGw&s" alt="">
+            
+            <img class="photo-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08PwM_faWBcN5624ThVwX9dj0TY2-cSfRArWp1qtZGw&s" alt="">
+            
+            <img class="photo-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08PwM_faWBcN5624ThVwX9dj0TY2-cSfRArWp1qtZGw&s" alt="">
+            
+            <img class="photo-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08PwM_faWBcN5624ThVwX9dj0TY2-cSfRArWp1qtZGw&s" alt="">
+            
+            <img class="photo-7" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08PwM_faWBcN5624ThVwX9dj0TY2-cSfRArWp1qtZGw&s" alt="">
+            
+            <img class="photo-8" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08PwM_faWBcN5624ThVwX9dj0TY2-cSfRArWp1qtZGw&s" alt="">
+        </div>
+
+    </div>
+</body>
+</html>

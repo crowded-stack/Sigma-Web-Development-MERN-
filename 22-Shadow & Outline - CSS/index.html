@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow & Outline - CSS</title>
+
+    <style>
+        
+        td, th {
+            border: 3px solid black;
+            margin: 0;
+            text-shadow: 12px 13px 1px red;
+        }
+
+        form {
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 7px 4px 13px green;
+            outline: 2px solid red;
+            outline-offset: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Shadow & Outline</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>List</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Reg. No.</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="row-head">
+                            <td>1</td>
+                            <td>Ali</td>
+                            <td colspan="2">0321343434</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Usman</td>
+                            <td rowspan="2">0321343434</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr><td colspan="4">Hi this is footer.</td></tr>
+                    </tfoot>
+                </table>
+            </article>
+
+            <article>
+                <h2>Form</h2>
+                <form action="" method="get">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" autofocus>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div>
+                        <label for="psw">Password</label>
+                        <input type="password" name="psw" id="psw">
+                    </div>
+
+                    <div>
+                        <select name="gender" id="gender">
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                            <option value="o">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="rm" id="rm">
+                        <label for="rm">Remember Me</label>
+                    </div>
+
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: 200px 130px 120px;
+            grid-template-columns: 100px 100px 200px 300px 100px;
+            justify-items: center;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            border: 1px solid green;
+            background-color: yellow;
+            justify-self: stretch;
+        }
+
+        .item-4 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item item-4"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

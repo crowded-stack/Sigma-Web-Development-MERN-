@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Styling - CSS</title>
+
+    <style>
+        #list-1 #h {
+            list-style-type:"✅";
+        }
+    
+        #list-1 #a {
+            list-style-type:"⚠";
+        }
+
+        #list-2 {
+            list-style-type: "💝";
+        }
+
+        #list-3 {
+            list-style: none;
+            display: flex;
+        }
+
+        #list-3 li {
+            padding: 8px;
+        }
+
+        #list-4  {
+            list-style-position: inside;
+        }
+
+        #list-4 li {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul id="list-1">
+                <li id="h">Home</li>
+                <li id="a">About</li>
+                <li id="c">Contact</li>
+            </ul>
+
+            <ul id="list-2">
+                <li id="h">Home</li>
+                <li id="a">About</li>
+                <li id="c">Contact</li>
+            </ul>
+
+            <ul id="list-3">
+                <li id="h">Home</li>
+                <li id="a">About</li>
+                <li id="c">Contact</li>
+            </ul>
+
+            <ul id="list-4">
+                <li id="h">Home</li>
+                <li id="a">About</li>
+                <li id="c">Contact</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

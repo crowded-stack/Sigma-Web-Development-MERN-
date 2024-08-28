@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let bandInfo;
+        let together = true;
+
+        let band = {
+            name: 'band name',
+            nationality: 'England',
+            genre: 'band type',
+            members: 5,
+            formed: 2003,
+            split: together ? 2012 : false,
+            albums: [getAlbum('abc', 2004), getAlbum('cde', 2005)]
+        }
+
+        function getAlbum(name, released) {
+            let album = {};
+            album.name = name;
+            album.released = released;
+            return album;
+        }
+
+        bandInfo = `Name: ${band.name}, Nationality: ${band.nationality}, Active: ${band.formed} `;
+
+    </script>
+</body>
+
+</html>

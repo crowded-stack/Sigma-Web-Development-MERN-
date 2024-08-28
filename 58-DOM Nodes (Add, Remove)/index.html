@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Add/Remove Elements/Nodes</title>
+
+
+    <style>
+        .white-green {
+            background-color: green;
+            color: white;
+        }
+
+        .white-black {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box One</div>
+        <div class="box">Box Two</div>
+    </div>
+
+
+    <script>
+        let cont = document.querySelector(".container");
+        console.log(cont.innerHTML);
+        console.log(cont.innerText);
+
+        let elem_0 = document.createElement("div");
+        elem_0.innerHTML = "Box Three";
+        cont.append(elem_0);
+
+        let elem_1 = document.createElement("div");
+        elem_1.innerHTML = "Box Zero";
+        cont.prepend(elem_1);
+
+        elem_0.setAttribute("class", "box");
+        elem_1.setAttribute("class", "box");
+
+
+        let elem_4 = document.createElement("div");
+        elem_4.innerHTML = "Box Inserted"
+        cont.insertBefore(elem_4, elem_0);
+
+        cont.insertAdjacentHTML("afterbegin", `<div class="box"> <h1>Milk</h1> <p>Milk fulfill calcium needs.</p> </div>`);
+
+        elem_4.remove();
+
+        cont.classList.add("white-green");
+        cont.classList.remove("white-green");
+        cont.classList.add("white-black");
+        cont.classList.toggle("white-black")
+        cont.className
+    </script>
+</body>
+</html>

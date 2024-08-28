@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.li-item{
+    @apply flex space-x-2 items-center text-gray-300 hover:cursor-pointer;
+}
+
+.right-side-item {
+    @apply  bg-gray-800 px-3 py-2 rounded-lg flex flex-col;
+}

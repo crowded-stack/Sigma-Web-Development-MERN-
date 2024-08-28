@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        h1{
+            color: blue;
+        }
+
+        h2{
+            color: #9967d1;
+        }
+
+        dt {
+            color: rgb(144, 108, 211);
+        }
+
+        dd{
+            color: rgba(234, 155, 67, 0.9);
+        }
+
+        pre {
+            color: hsl(0, 57%, 9%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Colors</h1>
+    <h2>5 ways to define colors in css.</h2>
+    <dl>
+        <dt>Color Keyword</dt>
+        <dd>
+            <pre>
+                h1{
+                    color: blue;
+                }
+            </pre>
+        </dd>
+
+        <dt>Hex Color Code</dt>
+        <dd>
+            <pre>
+                h1{
+                    color: #6f899a;
+                }
+            </pre>
+        </dd>
+
+        <dt>RGB</dt>
+        <dd>
+            <pre>
+                <h3>Simple RGB</h3>
+                h1{
+                    color: rgb(233, 122, 34);
+                }
+
+                <h3>RGB with Alpha (opacity range: 0-1, default is 1).</h3>
+                h1{
+                    color: rgba(233, 122, 34, 1);
+                }
+            </pre>
+        </dd>
+
+        <dt>HSL</dt>
+        <dd>
+            <pre>
+                <h3>HSL also 2 variants, with alpha and without alpha.</h3>
+                h1{
+                    color: hsl(233, 100%, 100%);
+                }
+            </pre>
+        </dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400..800&display=swap');
+
+        * {
+            font-family: "Baloo Tamma 2", system-ui;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: brown;
+            padding: 8px 16px;
+            color: white;
+            text-decoration-line: underline;
+        }
+
+        .main {
+            margin: 16px 0;
+            padding: 8px 16px;
+        }
+
+        .article-intro {
+            width: 50%;
+        }
+
+        .article-stages {
+            width: 60%;
+        }
+
+        h2 {
+            color: brown;
+            margin: 4px 0px;
+            text-decoration-line: underline;
+        }
+
+        dl {
+            margin: 1;
+        }
+
+        .article-stages {
+            margin: 24px 0;
+        }
+
+        #stages {
+            margin: 16px 0;
+        }
+
+        #stages div {
+            margin-top: 6px;
+        }
+
+        dd {
+            margin-left: 36px;
+        }
+
+        dt {
+            font-weight: 700;
+        }
+
+        .stage-One {
+            color: blue;
+        }
+
+        #stage-one {}
+
+        body .main .sec-one .article-stages .stage-One {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Specificity</h1>
+    </header>
+
+    <main class="main">
+        <section class="sec-one">
+            <article class="article-intro">
+                <h2>What is specificity?</h2>
+                <p>Specificity means when an element has multiple references for styling in css and there is need to
+                    decide which will be applied. An algorithm takes place to resolve this conflict called "Cascade
+                    Algorithm".</p>
+            </article>
+
+            <article class="article-stages">
+                <h2 id="stages-heading" class="article-stages-heading">Stages of Cascade Algorithm</h2>
+                <p id="stages-para" class="article-stages-para">Cascade algorithm defines 4 stages to resolve the
+                    conflict.</p>
+
+                <div id="stages">
+                    <dl>
+                        <div id="stage-one" class="stage-One">
+                            <dt>Position and Order of Appearence</dt>
+                            <dd>Let's suppose, an element has 4 references of same type of selector. Coming at the end
+                                in the sequence will be applied.</dd>
+                        </div>
+
+                        <div>
+                            <dt>Specificity</dt>
+                            <dd>It decides according to the priority of css selectors. Which has high priority, it will
+                                be applied. <br> Important --> Inline --> Id Selector --> Class/Attribute/Pseudo Class
+                                Selectors --> Element/Tag Selector --> Universal Selector</dd>
+                        </div>
+
+                        <div>
+                            <dt>Origin</dt>
+                            <dd>When we do not define any style for element then the styles are provided by the browser.
+                                It's called user agent style sheet.</dd>
+                        </div>
+
+                        <div>
+                            <dt>Important</dt>
+                            <dd>When a selector is defined with a keyword "important" it will has high priority and will
+                                be applied rather than others</dd>
+                        </div>
+                    </dl>
+                </div>
+            </article>
+
+        </section>
+    </main>
+</body>
+
+</html>

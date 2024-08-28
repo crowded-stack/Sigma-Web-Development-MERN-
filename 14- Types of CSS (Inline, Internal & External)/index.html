@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of CSS</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        #types {
+            margin: 16px;
+        }
+
+        #types h2 {
+            margin: 24px 0px;
+            color: rgb(5, 97, 100);
+        }
+
+        #article_explanation {
+            margin: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="background-color: rgb(5, 97, 100); color: wheat; padding: 8px 16px;">Types of CSS</h1>
+    </header>
+
+    <main>
+        <section>
+            <article id="types">
+
+                <h2>What are the types of CSS or different ways to add CSS?</h2>
+                <p>There are 3 types of CSS or 3 different ways to add CSS to your page.
+                <ol>
+                    <li>Inline CSS</li>
+                    <li>Internal CSS</li>
+                    <li>External CSS</li>
+                </ol>
+                </p>
+            </article>
+
+            <article id="article_explanation">
+
+                <h3>1. Inline CSS</h3>
+                <pre>
+                    <code>
+    &lt;h1&gt; style="background-color: rgb(5, 97, 100); color: wheat; padding: 8px;">Types of CSS&lt;/h1&gt;
+                    </code>
+                </pre>
+
+                <h3>2. Internal CSS</h3>
+                <p>When we use "style" tag in the head section of the same file where we need to style the elements,
+                    it's called Internal CSS.</p>
+                <pre>
+                    <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Internal CSS&lt;/title&gt;
+            &lt;style&gt;
+                    *{
+                            margin: 0px;
+                    }
+                    h2{
+                            background-color: black;
+                            color: white;
+                    }
+            &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+            &lt;h2&gt;This is an example of Internal CSS&lt;/h2&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+                    </code>
+                </pre>
+
+                <div>
+                    <h3>3. External CSS</h3>
+                    <p>When we define CSS in a seprated file and link this file in the document by using &lt;link
+                        rel="stylesheet" href="filename.css"&gt;</p>
+                    <div>
+                        <h4>HTML</h4>
+                        <pre>
+                    <code>
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;External CSS&lt;/title&gt;
+        &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;External CSs&lt;/h1&gt;
+        &lt;p&gt;This is an example of external CSS.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+                    </code>
+                </pre>
+                    </div>
+
+                    <h4>CSS</h4>
+                    <pre>
+                    <code>
+    <span>style.css</span>
+    h1{
+        color: blue;
+    }
+                    </code>
+                </pre>
+                </div>
+            </article>
+
+        </section>
+    </main>
+</body>
+
+</html>

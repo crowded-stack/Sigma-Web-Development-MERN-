@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - HTML</title>
+</head>
+<body>
+    <h1>Form - HTML</h1>
+    <form action="" >
+        <div>
+            <label for="name">Enter Your Name</label>
+            <input type="text" id="name" name="name" placeholder="">
+        </div>
+
+        <div>
+            <input type="radio" name="gender" id="male" value="1">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="2">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="remember_me" id="remember_me">
+            <label for="remember_me">Remember Me</label>
+        </div>
+
+        <div>
+            <label for="comment">Comments___________</label> <br>
+            <textarea name="comment" id="comment" cols="50" rows="10" placeholder="Type your comments here..."></textarea>
+        </div>
+
+        <div>
+            <select name="department" id="departments">
+                <option value="1">Health</option>
+                <option value="2">Food</option>
+                <option value="3">Security</option>
+                <option value="4">Sports</option>
+            </select>
+        </div>
+
+        <div><button type="submit">Process</button></div>
+    </form>
+</body>
+</html>

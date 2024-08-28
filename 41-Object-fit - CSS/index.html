@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            place-content: center;
+        }
+
+        .container {
+            width: 600px;
+            height: 600px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        .photos {
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+
+        .photo-1 img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .photo-2 img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            /* object-position: 10px 20px; */
+            object-position: top;
+        }
+
+        .photo-3 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwlEZJrXqutCTC8bTPuwd414u93tYFtsy2_tmlQ3SIA&s");
+
+            background-position: 20px 20px;
+        }
+
+        .photo-4 img {
+            width: 150px;
+            height: 150px;
+            object-fit: fill;
+            object-position: 10px 10px;
+        }
+        
+        .photo-5 img {
+            width: 150px;
+            height: 150px;
+            object-fit: scale-down;
+            object-position: 10px 20px ;
+        }
+
+        .repeat {
+            width: 300px;
+            height: 300px;
+            border: 2px solid green;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2q_Tfl5KMLL9724cX8-BYtLSYiPpBZNz2lWk2sTA3pA&s");
+
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos photo-1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwlEZJrXqutCTC8bTPuwd414u93tYFtsy2_tmlQ3SIA&s" alt="">
+        </div>
+        <div class="photos photo-2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwlEZJrXqutCTC8bTPuwd414u93tYFtsy2_tmlQ3SIA&s" alt="">
+        </div>
+        <div class="photos photo-3"></div>
+        <div class="photos photo-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwlEZJrXqutCTC8bTPuwd414u93tYFtsy2_tmlQ3SIA&s" alt="">
+        </div>
+        <div class="photos photo-5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwlEZJrXqutCTC8bTPuwd414u93tYFtsy2_tmlQ3SIA&s" alt="">
+        </div>
+        <div class="photos photo-6"></div>
+        <div class="photos photo-7"></div>
+        <div class="photos photo-8"></div>
+    </div>
+
+    <div class="container-2">
+        <div class="repeat">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Are</title>
+
+    <style>
+
+        .container {
+            display: grid;
+            grid-template-areas:
+             'nav nav nav nav'
+             'main main empty sidebar'
+             'footer footer footer footer';
+        }
+
+        .items {
+            text-align: center;
+        }
+
+        .navbar {
+            grid-area: nav;
+            background-color: yellow;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: aqua;
+        }
+
+        .empty {
+            grid-area: empty;
+            background-color: brown;
+            color: white;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: blue;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items navbar">Navbar</div>
+        <div class="items main">Main</div>
+        <div class="items empty">Empty</div>
+        <div class="items sidebar">Sidebar</div>
+        <div class="items footer">Footer</div>
+    </div>
+</body>
+</html>

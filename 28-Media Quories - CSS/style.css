@@ -1,0 +1,79 @@
+:root {
+    --defImgUrl: url('https://i.pinimg.com/736x/55/c7/d4/55c7d48a870dd80e5a5bb83eca9801e1.jpg');
+    --defPrimaryBorderRadius: 10px;
+    --defTagBorderRadius: 14px;
+    --defPrimaryBorder: 1px solid green;
+    --defSecondryBorder: 1px solid rgb(224, 250, 224);
+    --defPrimaryPadding: 5px;
+    --defTagPadding: 2px 8px;
+    --defButtonPadding: 4px 8px;
+    --defPrimaryFontSize: 12px;
+    --defPrimaryMargin: 5px;
+    --defSecondryMargin: 10px 5px;
+    --defPrimaryColor: rgb(9, 179, 32);
+    --defSecondryColor: rgb(235, 250, 237);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: gray;
+    padding: 30px;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    padding: var(--defPrimaryPadding);
+    border: var(--defPrimaryBorder);
+    border-radius: var(--defPrimaryBorderRadius);
+}
+
+.card img{
+    content: var(--defImgUrl);
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    max-height: 400px;
+    border-radius: var(--defPrimaryBorderRadius);
+}
+
+.text-container {
+    margin-left: var(--defPrimaryMargin);
+}
+
+h2 {
+    margin: var(--defSecondryMargin);
+}
+
+p {
+    margin: var(--defSecondryMargin);
+    font-size: var(--defPrimaryFontSize);
+}
+
+.read-more button{
+    font-size: var(--defPrimaryFontSize);
+    background-color: var(--defSecondryColor);
+    border: var(--defSecondryBorder);
+    border-radius: var(--defPrimaryBorderRadius);
+    padding: var(--defButtonPadding);
+    margin: var(--defSecondryMargin);
+    color: var(--defPrimaryColor);
+}
+
+@media screen and (max-width: 400px){
+    .card {
+        display: block;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+}

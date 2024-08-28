@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - 2</title>
+
+    <style>
+
+        :root {
+            --bg-pri: brown;
+            --bg-sec: yellow;
+        }
+
+        .container {
+            height: 310vh;
+            border: 2px solid blue;
+            display: grid;
+            grid-template-columns: [col-1] 140px [col-2] 150px [col-3] 120px [col-4] 140px [col-5];
+            grid-template-rows: [row-1] 120px [row-2] 130px [row-3];
+
+        }
+
+        .container :nth-child(even){
+            background-color: var(--bg-pri);
+        }
+        
+        .container :nth-child(odd){
+            background-color: var(--bg-sec);
+        }
+
+        .items {
+            width: 100px;
+            height: 100px;
+            border: 1px solid green;
+
+        }
+
+        .item-1 {
+            align-self: stretch;
+        }
+
+        /* .item-6 {
+            grid-row: row-1;
+            grid-column: col-1;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items item-6">6</div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+</body>
+</html>

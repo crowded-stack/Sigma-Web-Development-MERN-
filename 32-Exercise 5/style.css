@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Tamma+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --bg-navbar: green;
+    --bg-section: rgb(189, 135, 135);
+    --bg-article-one: rgb(31, 31, 146);
+    --bg-article-two: rgb(156, 122, 48);
+    --bg-footer: purple;
+    --text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo 2", sans-serif;
+}
+
+body {
+    background-color: rgb(65, 62, 62);
+}
+
+/* Navbar */
+header {
+    display: flex;
+    background-color: var(--bg-navbar);
+    color: var(--text-color);
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;;
+}
+
+
+
+nav {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    padding: 8px;
+    font-weight: bold;
+}
+
+/* Main */
+
+/* Logo */
+.logo {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    background-color: aqua;
+    border-radius: 100%;
+    bottom: 12px;
+    right: 12px;
+    overflow: hidden;
+}
+
+/* Section One */
+.cards {
+    background-color: var(--bg-section);
+    display: flex;
+    padding: 20px 0 60px 0;
+}
+
+.card-one {
+    width: 50%;
+}
+
+.card-one div {
+    background-color: var(--bg-article-one);
+}
+
+.card-two {
+    width: 50%;
+}
+
+.card-two div {
+    background-color: var(--bg-article-two);
+}
+
+.card-one div, .card-two div {
+    width: 300px;
+    height: 350px;
+    margin: auto;
+}
+
+/* Section 2 */
+.welcome {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.welcome h2 {
+    width: 27%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 33px 30px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+/* Footer */
+footer {
+    height: 30px;
+    background-color: rgb(209, 203, 203);
+}
